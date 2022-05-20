@@ -1,0 +1,48 @@
+//IT21194030-Evinda Hettiarachchi-MET_WE_03_01
+
+#include "Land.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+
+
+
+Land::Land(int lID, char lLoc [], char lStat [], double lPr)//overloaded constructor
+{
+LandId = lID;
+strcpy(LandLocation, lLoc);
+strcpy(LandStatus, lStat);
+LandPrice = lPr;  
+}
+
+
+
+void Land::addLandDetails(){
+
+}
+
+
+
+void Land::updateLandDetails(){
+
+}
+
+
+
+void Land::deleteLandDetails(){
+
+}
+
+
+
+void Land::verifyLandDetails(){
+
+}
+
+
+
+Land::~Land()//destructor
+{
+cout << "Destructor runs";
+}

@@ -1,0 +1,141 @@
+//IT21194030-Evinda Hettiarachchi-MET_WE_03_01
+
+#include <iostream>
+using namespace std;
+
+class Land{
+private :
+int LandId;
+char LandLocation [100];
+char LandStatus [20];
+double LandPrice;
+
+
+public :
+Land(); //default constructor
+Land(int lID, char lLoc [], char lStat [], double lPr); //overloaded constructor
+void addLandDetails();
+void updateLandDetails();
+void deleteLandDetails();
+void verifyLandDetails();
+~Land(); //destructor
+};
+
+//IT21194030-Evinda Hettiarachchi-MET_WE_03_01
+
+#include "Land.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+
+
+
+Land::Land(int lID, char lLoc [], char lStat [], double lPr)//overloaded constructor
+{
+LandId = lID;
+strcpy(LandLocation, lLoc);
+strcpy(LandStatus, lStat);
+LandPrice = lPr;  
+}
+
+
+
+void Land::addLandDetails(){
+
+}
+
+
+
+void Land::updateLandDetails(){
+
+}
+
+
+
+void Land::deleteLandDetails(){
+
+}
+
+
+
+void Land::verifyLandDetails(){
+
+}
+
+
+
+Land::~Land()//destructor
+{
+cout << "Destructor runs";
+}
+
+//IT21194030-Evinda Hettiarachchi-MET_WE_03_01
+
+#include <iostream>
+using namespace std;
+
+class Advertisement{
+private :
+int AdvertisementId;
+char AdvertisementPrice [20];
+char AdvertisementStatus [50];
+
+
+public :
+Advertisement(); //default constructor
+Advertisement (int aID, char aPr [], char aStat []); //overloaded constructor
+void advertisementDetails();
+void displayAdvertisement();
+void publishAdvertisement();
+void filterAdvertisement();
+~Advertisement(); //destructor
+};
+
+//IT21194030-Evinda Hettiarachchi-MET_WE_03_01
+
+#include "Advertisement.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+
+
+
+Advertisement::Advertisement(int aID, char aPr [], char aStat [])//overloaded constructor
+{
+AdvertisementId = aID;
+strcpy(AdvertisementPrice, aPr);
+strcpy(AdvertisementStatus, aStat);
+}
+
+
+
+void Advertisement::advertisementDetails(){
+
+}
+
+
+
+void Advertisement::displayAdvertisement(){
+
+}
+
+
+
+void Advertisement::publishAdvertisement(){
+
+}
+
+
+
+void Advertisement::filterAdvertisement(){
+
+}
+
+
+
+Advertisement::~Advertisement()//destructor
+{
+cout << "Destructor runs";
+}

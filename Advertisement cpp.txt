@@ -1,0 +1,47 @@
+//IT21194030-Evinda Hettiarachchi-MET_WE_03_01
+
+#include "Advertisement.h"
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+
+
+
+Advertisement::Advertisement(int aID, char aPr [], char aStat [])//overloaded constructor
+{
+AdvertisementId = aID;
+strcpy(AdvertisementPrice, aPr);
+strcpy(AdvertisementStatus, aStat);
+}
+
+
+
+void Advertisement::advertisementDetails(){
+
+}
+
+
+
+void Advertisement::displayAdvertisement(){
+
+}
+
+
+
+void Advertisement::publishAdvertisement(){
+
+}
+
+
+
+void Advertisement::filterAdvertisement(){
+
+}
+
+
+
+Advertisement::~Advertisement()//destructor
+{
+cout << "Destructor runs";
+}

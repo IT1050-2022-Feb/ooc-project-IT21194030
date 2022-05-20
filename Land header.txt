@@ -1,0 +1,22 @@
+//IT21194030-Evinda Hettiarachchi-MET_WE_03_01
+
+#include <iostream>
+using namespace std;
+
+class Land{
+private :
+int LandId;
+char LandLocation [100];
+char LandStatus [20];
+double LandPrice;
+
+
+public :
+Land(); //default constructor
+Land(int lID, char lLoc [], char lStat [], double lPr); //overloaded constructor
+void addLandDetails();
+void updateLandDetails();
+void deleteLandDetails();
+void verifyLandDetails();
+~Land(); //destructor
+};
